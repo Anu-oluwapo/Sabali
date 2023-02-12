@@ -119,15 +119,12 @@ border-bottom: 1px solid #EBEBEB;
 }
 
 .hamburger{
-  display: flex;
-  flex-grow: 10;
-  justify-content: end;
-  align-items: center;
-}
-
-.hamburger img{
   display: none;
 }
+/* 
+.hamburger img{
+  display: none;
+} */
 
 .btn{
   padding: 1.8rem 4.8rem;
@@ -240,9 +237,16 @@ border-bottom: 1px solid #EBEBEB;
     font-size: 38%;
   }
 
-  .hamburger img{
-    display: block;
+  .hamburger{
+    display: flex;
+    flex-grow: 10;
+    justify-content: end;
+    align-items: center;
   }
+  
+  /* .hamburger img{
+    display: block;
+  } */
 
   .nav-links, .header-buttons{
     display: none;

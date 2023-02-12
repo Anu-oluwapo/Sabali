@@ -22,7 +22,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 60%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -53,12 +53,35 @@ align-items: center;
 color: var(--black)
 }
 
+span{
+font-family: 'Rubik', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 2rem;
+align-items: center;
+color: var(--black)
+}
+
+span.heading{
+font-family: 'Rubik', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 1.4rem;
+line-height: 2rem;
+align-items: center;
+color: black
+}
+
 .container{
-  margin: 0% 10%;
+  /* margin: 0% 10%; */
+  max-width: 85%;
+  margin: auto;
 }
 
 header{
 padding: 2rem 0 ;
+border-bottom: 1px solid #EBEBEB;
 }
 
 .header{
@@ -95,6 +118,17 @@ padding: 2rem 0 ;
     justify-content: end;
 }
 
+.hamburger{
+  display: flex;
+  flex-grow: 10;
+  justify-content: end;
+  align-items: center;
+}
+
+.hamburger img{
+  display: none;
+}
+
 .btn{
   padding: 1.8rem 4.8rem;
   font-family: 'Rubik', sans-serif;
@@ -104,8 +138,8 @@ padding: 2rem 0 ;
   line-height: 2.4rem;
   align-items: center;
   border: none;
-  margin: 0 1rem;
   cursor: pointer;
+  margin-right: 1rem;
 }
 
 .btn_1{
@@ -118,18 +152,132 @@ padding: 2rem 0 ;
   color: var(--blue);
 }
 
+.logo img{
+  width: 15rem;
+}
+
 .hero-container{
   display: flex;
+  flex-direction: row;
+}
+
+.hero-content{
+  margin-top: 8%;
 }
 
 .hero-text{
   flex-grow: 1;
+  width: 80%;
+}
+
+.hero-text p{
+  margin: 2rem 0;
+  
+}
+
+.hero-buttons{
+ align-items: center;
 }
 
 .hero-img{
-  flex-grow: 10;
+  flex-grow: 1;
 }
 
 .hero-img img{
+  width: 65rem;
+}
+
+.hero-partners{
+  margin: 10rem 0;
+}
+
+.partners-img{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 50rem;
 }
+
+.partners-img img{
+  margin: .8rem 1rem
+}
+
+@media only screen and (min-width: 1920px) {
+  .container{
+    max-width: 1520px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 32.5%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 32.5%;
+  }
+
+  .partners-img{
+    width: 100%;
+  }
+
+  .hero-img img{
+    width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 38%;
+  }
+
+  .hamburger img{
+    display: block;
+  }
+
+  .nav-links, .header-buttons{
+    display: none;
+  }
+
+  .container{
+    max-width: 95%;
+  }
+
+  .hero-container{
+    flex-direction: column;
+  }
+  
+  .hero-text{
+    width: 100%;
+  }
+
+ .hero-img{
+  justify-content: start;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-buttons .btn{
+    margin: 1rem 0;
+    width: 98%;
+  }
+
+ .hero-img img{
+  width: 100%;
+  }
+
+}
+
+

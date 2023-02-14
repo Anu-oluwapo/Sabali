@@ -99,7 +99,7 @@ span{
 font-family: 'Rubik', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 1.4rem;
+font-size: 1.6rem;
 line-height: 2rem;
 align-items: center;
 color: var(--black);
@@ -110,7 +110,7 @@ span.heading{
 font-family: 'Rubik', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 1.4rem;
+font-size: 1.8rem;
 line-height: 2rem;
 align-items: center;
 color: black
@@ -433,6 +433,85 @@ section.reviews-section{
   display: flex;
   align-items: center;
   margin: 2rem 0;
+}
+
+section.cta-section{
+  padding: 12rem 0;
+  background-color: #001A5C;
+}
+
+.cta-section p{
+  color: #D9D9D9;margin: 2rem 0;
+}
+
+.cta-section h2{
+  color: white;
+}
+
+.cta-section .btn{
+  color: #001A5C;
+}
+
+section.footer-section{
+  padding: 10rem 0;
+}
+
+.footer-container{
+  display: flex;
+  margin-bottom: 10rem;
+  align-items: stretch;
+}
+
+.footer-container img{
+  margin: 3rem 0;
+}
+
+.footer-section a{
+font-family: 'Rubik', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+margin: 1rem 0;
+color: #292929;
+}
+
+.footer-container .text-content{
+  flex-grow: 2;
+}
+
+.footer-container .links{
+  display: flex;
+  flex-grow: 10;
+  justify-content: end;
+}
+
+.footer-links{
+  margin: 0 5rem;
+}
+
+.footer-links h4{
+  color: var(--blue);
+  margin: 3rem 0;
+}
+
+.footer-links .footer-link{
+  text-decoration: none;
+  margin: 2rem 0;
+}
+
+.footer-notes p{
+  font-weight: 400;
+  line-height: 34px;
+  font-size: 16px;
+  color: #292929;
+}
+
+.footer-notes hr{
+  margin: 3rem 0;
 }
 
 @media only screen and (min-width: 1920px) {

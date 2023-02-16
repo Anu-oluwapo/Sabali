@@ -166,12 +166,12 @@
             </div>
 
             <div class="controls">
-                <div class="left" id="button-l">
+                <div class="left" id="button-l2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                       </svg>
                 </div>
-                <div class="right" id="button-r">
+                <div class="right" id="button-r2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                       </svg>
@@ -309,6 +309,7 @@
 
     <script>
         var input = document.getElementById('scrollContainer');
+        var input2 = document.getElementById('scrollContainer2');
         let scrollAmount = 0
         var scrollMax = input.clientWidth
         var scrollMin = 0
@@ -323,6 +324,22 @@
 
         document.getElementById('button-r').addEventListener('click', (r)=>{
             input.scrollTo({
+                top: 0,
+                left: Math.max(scrollAmount += 260, scrollMax),
+                behavior: 'smooth'
+            });
+        })
+
+        document.getElementById('button-l2').addEventListener('click', (l)=>{
+                input2.scrollTo({
+                top: 0,
+                left: Math.max(scrollAmount -= 260, scrollMin),
+                behavior: 'smooth'
+            });
+        })
+
+        document.getElementById('button-r2').addEventListener('click', (r)=>{
+            input2.scrollTo({
                 top: 0,
                 left: Math.max(scrollAmount += 260, scrollMax),
                 behavior: 'smooth'

@@ -359,7 +359,7 @@ section.plans-section p{
   margin-right: 2rem;
   background-repeat: no-repeat;
   height: 54.6rem;
-  
+  background-size: cover;
   
 }
 
@@ -530,7 +530,7 @@ color: #292929;
     font-size: 32.5%;
   }
 
-  span{
+  /* span{
     font-size: 12px;
     line-height: 20px;
   }
@@ -546,7 +546,7 @@ color: #292929;
 
   .btn{
     font-size: 14px;
-  }
+  } */
 
 }
 
@@ -585,7 +585,7 @@ color: #292929;
 
 @media only screen and (max-width: 650px) {
   html {
-    font-size: 38%;
+    font-size: 62.5%;
   }
 
   h1{
@@ -644,6 +644,31 @@ color: #292929;
 
   .features-section .features{
     grid-template-columns: 1fr
+  }
+
+  .overflow-container{
+    overflow-x: none;
+    height: auto; 
+  }
+
+  .controls{
+    display: none;
+  }
+
+  .reviews, .plans{
+    flex-direction: column;
+    position: relative;
+    margin: 10rem 0;
+  }
+
+  .review, .plan{
+    width: auto;
+    margin: 2rem 0;
+
+  }
+
+  section.plans-section{
+    height: auto;
   }
 
 }
